@@ -19,3 +19,12 @@ def shows(local):
             
             # show vars
             print('\033[1m' + v + '\033[0m' + ' '+ the_type)
+            
+def value(local):
+    for v in local:
+        if not v.startswith('__'):
+            # get type
+            the_type = re.findall(r"\'([\w]+)\'", str(type(local[v])))[0]
+            
+            # show vars
+            print('\033[1m' + v + '\033[0m' + ' '+ the_type + ': ' + str(local[v]))
