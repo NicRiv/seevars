@@ -5,7 +5,7 @@ readme = open('./README.md', 'r')
 
 setup(
     name='seevars',
-    version='0.1.0',
+    version='0.1.1',
     description='A tool to view the variables entered by the python prompt',
     long_description=readme.read(),
     long_description_content_type='text/markdown',
